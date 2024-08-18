@@ -81,6 +81,69 @@ button:hover {
   margin-top: 20px;
 }
 
+#feedback-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+#feedback-container h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+
+#feedback-text {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ff6b6b;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  resize: vertical;
+}
+
+#rating-container {
+  margin-bottom: 20px;
+}
+
+#stars {
+  font-size: 24px;
+  color: #444;
+}
+
+.rating-star {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.rating-star:hover,
+.rating-star.active {
+  color: #ff6b6b;
+}
+
+#submit-feedback-btn {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 20px;
+}
+
+#submit-feedback-btn:hover {
+  background-color: #ff8e8e;
+  transform: scale(1.05);
+}
+
 .stars, .twinkling{
   position: absolute;
   display: block;
