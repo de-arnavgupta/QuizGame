@@ -2,7 +2,8 @@
 
 Cosmic Quiz Adventure is an interactive, space-themed quiz game that tests your knowledge of the universe. Embark on a journey through the cosmos, answering questions about planets, galaxies, and more!
 
-##Preview
+## Preview
+
 ![Cosmic Quiz Adventure](/img/preview.png)
 
 ## Features
