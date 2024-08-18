@@ -154,12 +154,12 @@ button:hover {
 
 .stars {
   z-index: 0;
-  background: #000 url('img/stars.png') repeat top center;
+  background: #000 url('../img/stars.png') repeat;
 }
 
 .twinkling {
   z-index: 1;
-  background: transparent url('img/twinkling.png') repeat top center;
+  background: transparent url('../img/twinkling.png') repeat;
   animation: move-twink-back 200s linear infinite;
 }
 
