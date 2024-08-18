@@ -3,8 +3,7 @@
 Cosmic Quiz Adventure is an interactive, space-themed quiz game that tests your knowledge of the universe. Embark on a journey through the cosmos, answering questions about planets, galaxies, and more!
 
 ##Preview
-![Cosmic Quiz Adventure Screenshot] (QuizGame/img/preview.png)
-
+![Cosmic Quiz Adventure Screenshot] (/img/preview.png)
 
 ## Features
 
@@ -39,13 +38,17 @@ Cosmic Quiz Adventure is an interactive, space-themed quiz game that tests your 
 
 You can easily customize the quiz by modifying the `quizData` array in the `script.js` file. Add new questions, change existing ones, or adjust the number of questions as needed.
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## Credits
 
-- Background images: https://aws.amazon.com/s3/
+- Background images: (https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) (https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png)
 - Font: [Orbitron](https://fonts.google.com/specimen/Orbitron) and [Roboto](https://fonts.google.com/specimen/Roboto) from Google Fonts
 
 ## Contact
 
-If you have any questions, feel free to reach out to Arnav Gupta at arnvgpt28@outlook.com
+If you have any questions, feel free to reach out to Arnav Gupta.
 
 Enjoy your cosmic adventure!
