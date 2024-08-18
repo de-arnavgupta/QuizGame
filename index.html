@@ -42,10 +42,23 @@
         <p>Your final score: <span id="final-score-value"></span></p>
         <button id="restart-btn">Embark Again</button>
       </div>
+
+      <div id="feedback-container" style="display: none;">
+        <h3>We'd love your feedback!</h3>
+        <textarea id="feedback-text" rows="4" placeholder="Share your thoughts on the quiz..."></textarea>
+        <div id="rating-container">
+          <p>Rate your experience:</p>
+          <div id="stars">
+            <span class="rating-star" data-rating="1">&#9733;</span>
+            <span class="rating-star" data-rating="2">&#9733;</span>
+            <span class="rating-star" data-rating="3">&#9733;</span>
+            <span class="rating-star" data-rating="4">&#9733;</span>
+            <span class="rating-star" data-rating="5">&#9733;</span>
+          </div>
+        </div>
+        <button id="submit-feedback-btn">Submit Feedback</button>
+      </div>
     </div>
-
     <script src="js/app.js"></script>
-
   </body>
-
 </html>

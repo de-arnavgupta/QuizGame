@@ -1,8 +1,8 @@
 const quizData = [
   {
     question: "Which planet is known as the Red Planet?",
-    choices: ["Venus", "Mars", "Jupiter", "Saturn"],
-    correctAnswer: 1
+    choices: ["Venus", "Saturn", "Jupiter", "Mars"],
+    correctAnswer: 3
   },
   {
     question: "What is the largest planet in our solar system?",
@@ -10,14 +10,14 @@ const quizData = [
     correctAnswer: 2
   },
   {
-    question: "How many planets are in our solar system?",
-    choices: ["7", "8", "9", "10"],
-    correctAnswer: 1
-  },
-  {
     question: "What is the name of Earth's natural satellite?",
     choices: ["Sun", "Moon", "Mars", "Venus"],
     correctAnswer: 1
+  },
+  {
+    question: "How many planets are in our solar system?",
+    choices: ["7", "9", "8", "10"],
+    correctAnswer: 2
   },
   {
     question: "Which galaxy is the Milky Way's nearest neighbor?",
@@ -45,11 +45,20 @@ const timerEl = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
 const finalScoreValue = document.getElementById("final-score-value");
 const restartBtn = document.getElementById("restart-btn");
+feedbackContainer = document.getElementById("feedback-container");
+const feedbackText = document.getElementById("feedback-text");
+const ratingStars = document.querySelectorAll(".rating-star");
+const submitFeedbackBtn = document.getElementById("submit-feedback-btn");
 
 
 startBtn.addEventListener("click", startQuiz);
 submitBtn.addEventListener("click", checkAnswer);
 restartBtn.addEventListener("click", restartQuiz);
+ratingStars.forEach(star => {
+  star.addEventListener("click", () => setRating(star.dataset.rating));
+});
+submitFeedbackBtn.addEventListener("click", submitFeedback);
+
 
 function startQuiz() {
   landingPage.style.display = "none";
@@ -142,4 +151,24 @@ function restartQuiz() {
   finalScore.style.display = "none";
   feedbackContainer.style.display = "none";
   landingPage.style.display = "block";
+}
+
+function setRating(rating) {
+  ratingStars.forEach(star => {
+    star.classList.toggle("active", star.dataset.rating <= rating);
+  });
+}
+
+function submitFeedback() {
+  const rating = document.querySelectorAll(".rating-star.active").length;
+  const feedback = feedbackText.value;
+
+  console.log("Feedback submitted:", { rating, feedback });
+
+  feedbackText.value = "";
+  ratingStars.forEach(star => star.classList.remove("active"));
+
+  feedbackContainer.style.display = "none";
+
+  alert("Thank you for your feedback!");
 }
